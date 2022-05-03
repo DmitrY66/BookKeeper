@@ -1,0 +1,21 @@
+{
+  "name": "bookkeeper",
+  "version": "1.0.0",
+  "description": "bookkeeper",
+  "main": "main.js",
+  "build": {
+    "win": {
+      "icon": "./favicon.png"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder -w"
+  },
+  "author": "DG",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.0.1",
+    "electron-builder": "^22.14.13"
+  }
+}

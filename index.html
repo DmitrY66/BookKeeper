@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bookkeeper</title>
+
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./js/index.js" type="module"></script>
+
+</head>
+
+<body>
+
+  <header class="header container">
+
+    <!-- вариант с картинкой -->
+    <!-- <img class="header__modal-switch" src="./img/power.svg" alt="logo" width="68" height="68"> -->
+
+    <!-- вариант с текстом -->
+    <p class="header__modal-switch">Bookkeeper</p>
+
+    <div class="header__logo webkit_app_region">
+      <a><img src="./img/logo.svg" alt="logo" width="40"></a>
+      <h1>Bookkeeper</h1>
+    </div>
+
+    <div class="header__control">
+      <button class="control_refresh"></button>
+      <button class="control_min"></button>
+      <button class="control_max"></button>
+      <button class="control_close"></button>
+    </div>
+
+  </header>
+
+  <main class="main container">
+
+    <aside class="aside__left">
+
+      <h3>Расходы:</h3>
+
+      <ul class="basic">
+
+        <li id="expense1" class="basic__item btn__expense_item-js">
+          <button id="btn__expense1">Расход 1</button>
+          <input id="expense1-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense1-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense2" class="basic__item btn__expense_item-js">
+          <button id="btn__expense2">Расход 2</button>
+          <input id="expense2-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense2-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense3" class="basic__item btn__expense_item-js">
+          <button id="btn__expense3">Расход 3</button>
+          <input id="expense3-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense3-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense4" class="basic__item btn__expense_item-js">
+          <button id="btn__expense4">Расход 4</button>
+          <input id="expense4-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense4-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense5" class="basic__item btn__expense_item-js">
+          <button id="btn__expense5">Расход 5</button>
+          <input id="expense5-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense5-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense6" class="basic__item btn__expense_item-js">
+          <button id="btn__expense6">Расход 6</button>
+          <input id="expense6-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense6-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense7" class="basic__item btn__expense_item-js">
+          <button id="btn__expense7">Расход 7</button>
+          <input id="expense7-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense7-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense8" class="basic__item btn__expense_item-js">
+          <button id="btn__expense8">Расход 8</button>
+          <input id="expense8-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense8-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense9" class="basic__item btn__expense_item-js">
+          <button id="btn__expense9">Расход 9</button>
+          <input id="expense9-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense9-save" class="btn__save">Сохранить</button>
+        </li>
+
+        <li id="expense10" class="basic__item btn__expense_item-js">
+          <button id="btn__expense10">Расход 10</button>
+          <input id="expense10-inp" class="inp__expense_item-js" type="text">
+          <button id="btn__expense10-save" class="btn__save">Сохранить</button>
+        </li>
+
+      </ul>
+
+      <ul class="exp-and-del">
+        <li class="basic__item">
+          <button id="btn__export" class="btn__total">Export</button>
+        </li>
+
+        <li class="basic__item basic__item-modal">
+          <button id="btn__deletedata" class="btn__total">Удалить данные</button>
+          <div class="btn__modal">
+            <button class="btn__confirm">Подтвердите&nbsp;действие</button>
+            <button class="btn__cancel">Отменить</button>
+          </div>
+        </li>
+      </ul>
+
+    </aside>
+
+    <aside class="aside__right">
+
+      <div class="aside__right-title">
+        <h4>Текуший период:</h4>
+        <h4 id="courent__date"></h4>
+        <h4 id="totalsum"></h4>
+      </div>
+
+      <div class="aside__right-items"></div>
+      <div class="aside__right-sum"></div>
+      <h5 class="aside__right-message"></h5>
+
+    </aside>
+
+  </main>
+
+  <footer class="footer container">
+
+    <a href="#"><img src="./img/logo.svg" alt="logo" width="30"></a>
+    <h2>Bookkeeper Co. Ltd.</h2>
+
+  </footer>
+
+  <!-- <div class="modal-change-name">
+
+    <input type="text" class="inp-change-name">
+    <button class="btn__save">Сохранить</button>
+
+  </div> -->
+
+</body>
+
+</html>
