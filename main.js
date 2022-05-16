@@ -2,11 +2,9 @@
 
 const { app, BrowserWindow, screen } = require('electron');
 
-// ========== серверная часть ==========
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-
 
 // отключаем аппаратное ускорение (из-за ошибки "[10444:0331/135000.551:ERROR:gpu_init.cc(446)] Passthrough is not supported, GL is disabled, ANGLE is")
 app.disableHardwareAcceleration();
@@ -102,7 +100,7 @@ const sendResContent = (url, contentType, res) => {
 };
 
 
-// определяем тип сонтента при запросе к серверу
+// определяем тип контента при запросе к серверу
 const getContentType = (url) => {
   switch (path.extname(url)) {
     case '.html':
